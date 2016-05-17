@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using Paris.Models;
 
 namespace Paris.Repositories
@@ -7,7 +9,13 @@ namespace Paris.Repositories
     {
         public IEnumerable<Quartier> GetQuartiers()
         {
-            throw new System.NotImplementedException();
+            IEnumerable<Quartier> quartiers;
+            using (ApplicationDbContext dbContext = new ApplicationDbContext())
+            {
+                quartiers = dbContext.Quartiers.ToList();
+            }
+
+            return quartiers;
         }
     }
 }

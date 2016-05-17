@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.Spatial;
+﻿using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Spatial;
 
 namespace Paris.Models
 {
@@ -10,8 +11,8 @@ namespace Paris.Models
 
     }
 
-    public enum PoIType
+    public class PoIType
     {
-        CafeAUnEuro
+        public string Name { get; set; }
     }
 }

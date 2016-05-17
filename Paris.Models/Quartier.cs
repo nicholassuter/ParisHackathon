@@ -5,9 +5,9 @@ namespace Paris.Models
 {
     public class Quartier
     {
-        public string Nom { get; set; }
+        public string Name { get; set; }
         public int Arrondissement { get; set; }
-
-        private IEnumerable<PointOfInterest> pointsOfInterest { get; set; }
+        public DbGeography Polygon { get; set; }
+        private IEnumerable<PointOfInterest> PointsOfInterest { get; set; }
     }
 }
