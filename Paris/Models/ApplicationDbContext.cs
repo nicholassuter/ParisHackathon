@@ -3,10 +3,18 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Paris.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
+        public ApplicationDbContext() : base("DefaultConnection")
         {
+            Database.SetInitializer<ApplicationDbContext>(null);
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            // attempt override standard name of complex property
+            modelBuilder.Entity<Quartier>().ToTable("Quartier");
+
         }
 
         public static ApplicationDbContext Create()

@@ -22,5 +22,13 @@ namespace Paris.Controllers
 
             return Ok(quartiers);
         }
+
+        public IHttpActionResult GetQuartiersByTerm(string term)
+        {
+            QuartierRepository quartierRepository = new QuartierRepository();
+            IEnumerable<Quartier> quartiers = quartierRepository.GetQuartiersByTerm(term);
+
+            return Ok(quartiers);
+        }
     }
 }

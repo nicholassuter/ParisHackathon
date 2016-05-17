@@ -1,10 +1,13 @@
-﻿using System.Data.Entity.ModelConfiguration.Conventions;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity.Spatial;
 
 namespace Paris.Models
 {
     public class PointOfInterest
     {
+        [Key]
+        public int IdPOI { get; set; }
         public string Name { get; set; }
         public PoIType PoIType { get; set; }
         public DbGeography Coordinates { get; set; }

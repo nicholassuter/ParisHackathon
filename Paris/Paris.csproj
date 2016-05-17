@@ -186,6 +186,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\QuartierController.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Repositories\PoiRepository.cs" />
     <Compile Include="Repositories\QuartierRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

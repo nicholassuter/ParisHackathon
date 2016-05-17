@@ -14,3 +14,11 @@ C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Debug\EntityFramework.xml
 C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.csprojResolveAssemblyReference.cache
 C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.dll
 C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.pdb
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\bin\Debug\Paris.Models.dll.config
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\bin\Debug\Paris.Models.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\bin\Debug\Paris.Models.pdb
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\bin\Debug\EntityFramework.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\bin\Debug\EntityFramework.xml
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.csprojResolveAssemblyReference.cache
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris.Models\obj\Debug\Paris.Models.pdb
