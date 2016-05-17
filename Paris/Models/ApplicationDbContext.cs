@@ -15,6 +15,7 @@ namespace Paris.Models
             // attempt override standard name of complex property
             modelBuilder.Entity<Quartier>().ToTable("Quartier").HasKey(k => k.IdQuartier);
             modelBuilder.Entity<PointOfInterest>().ToTable("POI").HasKey(k => k.IdPOI);
+            modelBuilder.Entity<Type>().ToTable("Type").HasKey(k => k.TypeId);
 
         }
 

@@ -12,7 +12,7 @@ namespace Paris.Repositories
             IEnumerable<PointOfInterest> pois;
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
-                pois = dbContext.PointsOfInterest.Where(p => p.IdQuartier == quartierId).ToList();
+                pois = dbContext.PointsOfInterest.Where(p => p.IdQuartier == quartierId).Include("Type").ToList();
             }
 
             return pois;
