@@ -5,28 +5,17 @@ using Paris.Models;
 
 namespace Paris.Repositories
 {
-    //public class QuartierRepository
-    //{
-    //    public IEnumerable<Quartier> GetQuartiers()
-    //    {
-    //        IEnumerable<Quartier> quartiers;
-    //        using (ApplicationDbContext dbContext = new ApplicationDbContext())
-    //        {
-    //            quartiers = dbContext.Quartiers.ToList();
-    //        }
+    public class PoiRepository
+    {
+        public IEnumerable<PointOfInterest> GetPointOfInterestsByQuartierId(int quartierId)
+        {
+            IEnumerable<PointOfInterest> pois;
+            using (ApplicationDbContext dbContext = new ApplicationDbContext())
+            {
+                pois = dbContext.PointsOfInterest.Where(p => p.IdQuartier == quartierId).ToList();
+            }
 
-    //        return quartiers;
-    //    }
-
-    //    public IEnumerable<Quartier> GetQuartiersByTerm(string term)
-    //    {
-    //        IEnumerable<Quartier> quartiers;
-    //        using (ApplicationDbContext dbContext = new ApplicationDbContext())
-    //        {
-    //            quartiers = dbContext.Quartiers.Where(q => q.Name.Contains(term)).ToList();
-    //        }
-
-    //        return quartiers;
-    //    }
-    //}
+            return pois;
+        }
+    }
 }

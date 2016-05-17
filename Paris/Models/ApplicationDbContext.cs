@@ -13,7 +13,8 @@ namespace Paris.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // attempt override standard name of complex property
-            modelBuilder.Entity<Quartier>().ToTable("Quartier");
+            modelBuilder.Entity<Quartier>().ToTable("Quartier").HasKey(k => k.IdQuartier);
+            modelBuilder.Entity<PointOfInterest>().ToTable("POI").HasKey(k => k.IdPOI);
 
         }
 

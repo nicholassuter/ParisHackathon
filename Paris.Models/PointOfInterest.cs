@@ -6,11 +6,10 @@ namespace Paris.Models
 {
     public class PointOfInterest
     {
-        [Key]
         public int IdPOI { get; set; }
+        public int IdQuartier { get; set; }
         public string Name { get; set; }
-        public PoIType PoIType { get; set; }
-        public DbGeography Coordinates { get; set; }
+        public DbGeometry Point { get; set; }
     }
 
     public class PoIType
