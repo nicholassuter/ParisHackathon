@@ -13,9 +13,9 @@ namespace Paris.Repositories
 
 namespace Paris.Controllers
 {
-    public class QuartierController : ApiController
+    public class QuartiersController : ApiController
     {
-        public IHttpActionResult GetQuartiers()
+        public IHttpActionResult GetAllQuartiers()
         {
             QuartierRepository quartierRepository = new QuartierRepository();
             IEnumerable<Quartier> quartiers = quartierRepository.GetQuartiers();

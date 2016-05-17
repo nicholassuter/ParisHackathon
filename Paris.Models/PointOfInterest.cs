@@ -11,7 +11,6 @@ namespace Paris.Models
         public string Name { get; set; }
         public PoIType PoIType { get; set; }
         public DbGeography Coordinates { get; set; }
-
     }
 
     public class PoIType
