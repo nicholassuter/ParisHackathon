@@ -1,0 +1,8 @@
+C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Release\Paris.Models.dll.config
+C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Release\Paris.Models.dll
+C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Release\Paris.Models.pdb
+C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Release\EntityFramework.dll
+C:\DEV\Paris\ParisHackathon\Paris.Models\bin\Release\EntityFramework.xml
+C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Release\Paris.Models.csprojResolveAssemblyReference.cache
+C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Release\Paris.Models.dll
+C:\DEV\Paris\ParisHackathon\Paris.Models\obj\Release\Paris.Models.pdb
