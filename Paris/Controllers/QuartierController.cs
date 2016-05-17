@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Paris.Models;
+using Paris.Repositories;
+
+namespace Paris.Repositories
+{
+}
+
+namespace Paris.Controllers
+{
+    public class QuartierController : ApiController
+    {
+        public IHttpActionResult GetQuartiers()
+        {
+            QuartierRepository quartierRepository = new QuartierRepository();
+            IEnumerable<Quartier> quartiers = quartierRepository.GetQuartiers();
+
+            return Ok(quartiers);
+        }
+    }
+}

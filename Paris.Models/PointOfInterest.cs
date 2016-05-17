@@ -1,0 +1,17 @@
+﻿using System.Data.Entity.Spatial;
+
+namespace Paris.Models
+{
+    public class PointOfInterest
+    {
+        public string Name { get; set; }
+        public PoIType PoIType { get; set; }
+        public DbGeography Coordinates { get; set; }
+
+    }
+
+    public enum PoIType
+    {
+        CafeAUnEuro
+    }
+}
