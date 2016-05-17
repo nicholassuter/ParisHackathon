@@ -229,3 +229,8 @@ C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\Microsoft.Owin.Security.Mic
 C:\Users\E1001\Source\Repos\ParisHackathon\Paris\obj\Debug\Paris.csprojResolveAssemblyReference.cache
 C:\Users\E1001\Source\Repos\ParisHackathon\Paris\obj\Debug\Paris.dll
 C:\Users\E1001\Source\Repos\ParisHackathon\Paris\obj\Debug\Paris.pdb
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\SqlServerTypes\x64\msvcr100.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\SqlServerTypes\x64\SqlServerSpatial110.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\SqlServerTypes\x86\msvcr100.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\SqlServerTypes\x86\SqlServerSpatial110.dll
+C:\Users\E1001\Source\Repos\ParisHackathon\Paris\bin\Microsoft.SqlServer.Types.dll
