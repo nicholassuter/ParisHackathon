@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
@@ -75,3 +76,11 @@ Xamarin/Coffee/CoffeeCross/CoffeeCross.Droid/Properties/AndroidManifest.xml
 *.dll
 
 Paris.Models/bin/Debug/Paris.Models.pdb
+=======
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Paris/obj/Release/Package
+/Paris.Models/bin/Release
+>>>>>>> 2e48ec7afbbc321908abd3b21dbd0fc6cb900aa5

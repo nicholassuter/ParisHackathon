@@ -3,10 +3,20 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Paris.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
+        public ApplicationDbContext() : base("DefaultConnection")
         {
+            Database.SetInitializer<ApplicationDbContext>(null);
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            // attempt override standard name of complex property
+            modelBuilder.Entity<Quartier>().ToTable("Quartier").HasKey(k => k.IdQuartier);
+            modelBuilder.Entity<PointOfInterest>().ToTable("POI").HasKey(k => k.IdPOI);
+            modelBuilder.Entity<Type>().ToTable("Type").HasKey(k => k.TypeId);
+
         }
 
         public static ApplicationDbContext Create()
